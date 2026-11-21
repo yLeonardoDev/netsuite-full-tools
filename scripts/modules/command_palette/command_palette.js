@@ -72,6 +72,7 @@
     let hasGithubBackup = false;
     let hasScriptExecute = true;
     let hasDeletedRecords = true;
+    let hasDeploymentReport = true;
     let hasSetFieldValues = true;
     const FRAGMENTOS_KEY = 'nsftSscSnippets';
     const FRAGMENTOS_SQL_KEY = 'nsftSqlSnippets';
@@ -92,6 +93,7 @@
         enableGithubBackup: false,
         enableScriptExecute: true,
         enableDeletedRecords: true,
+        enableDeploymentReport: true,
         enableSetFieldValues: true,
         enableSuiteScriptConsole: true,
         enableConsoleUtils: true,
@@ -106,6 +108,7 @@
         hasGithubBackup = items.enableGithubBackup === true;
         hasScriptExecute = items.enableScriptExecute !== false;
         hasDeletedRecords = items.enableDeletedRecords !== false;
+        hasDeploymentReport = items.enableDeploymentReport !== false;
         hasSetFieldValues = items.enableSetFieldValues !== false;
         hasSscConsole = items.enableSuiteScriptConsole !== false;
         hasConsoleUtils = items.enableConsoleUtils !== false;
@@ -784,6 +787,15 @@
                 iconKey: 'nsft',
                 keywords: 'eliminado eliminados borrado borrados borro quien deleted delete who audit papelera trash log registro',
                 run: () => window.dispatchEvent(new CustomEvent('nsft-show-deleted-records'))
+            }] : []),
+            ...(hasDeploymentReport ? [{
+                id: 'nsft:deployment-report',
+                label: i18n('dr_title', 'Script deployments report'),
+                description: i18n('dr_launch_tip', 'Filter every deployment by owner, type and status'),
+                category: T.catNsft,
+                iconKey: 'nsft',
+                keywords: 'relatorio relatório report implementacoes implementações deployments despliegues script owner proprietario criado por usuario usuário',
+                run: () => window.dispatchEvent(new CustomEvent('nsft-show-deployment-report'))
             }] : []),
             ...(hasSscConsole ? fragmentosYGuardados()
                 .filter((f) => f && typeof f.name === 'string' && f.name.trim() && typeof f.code === 'string')

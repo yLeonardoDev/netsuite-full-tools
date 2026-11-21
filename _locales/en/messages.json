@@ -18177,5 +18177,227 @@
   },
   "cl_8_0_0_rrblanco_desc": {
     "message": "Fixed Recent records looking yellowish; it is now white like the other NetSuite menus."
+  },
+  "langSelectTitle": {
+    "message": "Extension language"
+  },
+  "langAuto": {
+    "message": "Automatic (browser)"
+  },
+  "enableFileCabinetDeployedScriptsLabel": {
+    "message": "Deployed scripts in the File Cabinet"
+  },
+  "enableFileCabinetDeployedScriptsDesc": {
+    "message": "In folders such as SuiteScripts, tags every file used by a Script record and lists its deployments. Click the tag to jump to the script or straight to a deployment, and filter the page to show only deployed scripts."
+  },
+  "fcds_pill_deployed": {
+    "message": "Deployed · $1"
+  },
+  "fcds_pill_disabled": {
+    "message": "Deployments off · $1"
+  },
+  "fcds_pill_no_deploy": {
+    "message": "Script · no deployment"
+  },
+  "fcds_pill_tooltip": {
+    "message": "Click to see the script and its deployments"
+  },
+  "fcds_pop_title": {
+    "message": "Scripts that use this file"
+  },
+  "fcds_close": {
+    "message": "Close"
+  },
+  "fcds_no_deployments": {
+    "message": "This script has no deployments."
+  },
+  "fcds_dep_on": {
+    "message": "Deployed"
+  },
+  "fcds_dep_off": {
+    "message": "Not deployed"
+  },
+  "fcds_open_script": {
+    "message": "Open script"
+  },
+  "fcds_filter_only": {
+    "message": "Show only scripts with deployments"
+  },
+  "fcds_loading": {
+    "message": "Checking deployments…"
+  },
+  "fcds_error": {
+    "message": "Could not check deployments: $1"
+  },
+  "fcds_bar_count": {
+    "message": "$1 with deployments · $2 with a Script record · $3 script files on this page"
+  },
+  "fcds_status_released": {
+    "message": "Released"
+  },
+  "fcds_status_testing": {
+    "message": "Testing"
+  },
+  "fcds_status_notscheduled": {
+    "message": "Not scheduled"
+  },
+  "fcds_status_scheduled": {
+    "message": "Scheduled"
+  },
+  "fcds_view_script": {
+    "message": "View script"
+  },
+  "fcds_view_script_tip": {
+    "message": "Open the script record: $1"
+  },
+  "fcds_choose_script": {
+    "message": "$1 scripts use this file: pick one"
+  },
+  "enableDeploymentReportLabel": {
+    "message": "Script deployments report"
+  },
+  "enableDeploymentReportDesc": {
+    "message": "A window with every script deployment in the account, with who created it and who changed it last (from system notes), a user filter that suggests names as you type, type, status and text filters, direct links and CSV export."
+  },
+  "dr_title": {
+    "message": "Script deployments report"
+  },
+  "dr_launch_tip": {
+    "message": "Filter every deployment by user, type and status"
+  },
+  "dr_loading": {
+    "message": "Loading deployments…"
+  },
+  "dr_loading_n": {
+    "message": "Loading deployments… $1"
+  },
+  "dr_error": {
+    "message": "Could not load the deployments: $1"
+  },
+  "dr_reload": {
+    "message": "Reload"
+  },
+  "dr_export_csv": {
+    "message": "Export CSV"
+  },
+  "dr_f_search": {
+    "message": "Search"
+  },
+  "dr_f_search_ph": {
+    "message": "Deployment, script, ID, file…"
+  },
+  "dr_f_owner": {
+    "message": "Owner (who created the script)"
+  },
+  "dr_all": {
+    "message": "- All -"
+  },
+  "dr_clear": {
+    "message": "Clear filters"
+  },
+  "dr_top_owners": {
+    "message": "Owners:"
+  },
+  "dr_col_id": {
+    "message": "Internal ID"
+  },
+  "dr_col_deployment": {
+    "message": "Deployment"
+  },
+  "dr_col_script": {
+    "message": "Script"
+  },
+  "dr_col_type": {
+    "message": "Type"
+  },
+  "dr_col_owner": {
+    "message": "Script owner"
+  },
+  "dr_col_status": {
+    "message": "Status"
+  },
+  "dr_col_deployed": {
+    "message": "Deployed"
+  },
+  "dr_col_record": {
+    "message": "Applied to"
+  },
+  "dr_col_file": {
+    "message": "File"
+  },
+  "dr_yes": {
+    "message": "Yes"
+  },
+  "dr_no": {
+    "message": "No"
+  },
+  "dr_no_owner": {
+    "message": "(no owner)"
+  },
+  "dr_none": {
+    "message": "No deployment matches the filters."
+  },
+  "dr_count": {
+    "message": "$1 of $2 deployments"
+  },
+  "dr_more": {
+    "message": "Showing the first $1: narrow the filters or export to CSV to see all."
+  },
+  "dr_hint": {
+    "message": "Owner = the employee set as Owner on the script record (by default, whoever created it)."
+  },
+  "dr_f_user": {
+    "message": "User"
+  },
+  "dr_f_user_ph": {
+    "message": "Type a name, e.g. leo"
+  },
+  "dr_f_scope": {
+    "message": "Look in"
+  },
+  "dr_scope_any": {
+    "message": "Anyone who changed it"
+  },
+  "dr_col_created": {
+    "message": "Created by"
+  },
+  "dr_col_modified": {
+    "message": "Last changed by"
+  },
+  "dr_user_none": {
+    "message": "Nobody with that name"
+  },
+  "dr_top_creators": {
+    "message": "Created the most:"
+  },
+  "dr_loading_notes": {
+    "message": "$1 deployments · reading system notes…"
+  },
+  "dr_notes_unavailable": {
+    "message": "System notes could not be read on this page, so \"Created by\" falls back to the script owner. Open the report from the Script Deployments page."
+  },
+  "dr_notes_partial": {
+    "message": "$1 deployments have no system notes (common for bundles, SDF installs or a refreshed sandbox): for those, \"Created by\" uses the script notes or owner, or stays empty."
+  },
+  "dr_from_dep": {
+    "message": "From the deployment system notes"
+  },
+  "dr_from_script": {
+    "message": "From the script system notes (the deployment has none)"
+  },
+  "dr_from_owner": {
+    "message": "Script owner (no system notes found)"
+  },
+  "dr_tag_owner": {
+    "message": "owner"
+  },
+  "dr_hint2": {
+    "message": "Created by = whoever touched the deployment first, from its system notes. Hover the name to see where it came from."
+  },
+  "dr_user_counts": {
+    "message": "created $1 · changed $2"
+  },
+  "dr_incomplete": {
+    "message": "Only $1 of the $2 deployments NetSuite counts were loaded. Click Reload; if it persists, report it."
   }
 }

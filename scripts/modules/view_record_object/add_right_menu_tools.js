@@ -1,6 +1,6 @@
 (function () {
     'use strict';
-    const STORAGE_KEY = ['enableViewRecordObject', 'enableViewScriptedRecord', 'enableRecordLogsViewer', 'enableSuiteQLRunner', 'enableExportSearch', 'enableLoadRecordConsole', 'enableLoadNModule', 'enableGoToRecord', 'enableCommandPalette', 'enableCustomizationFinder', 'enableDeletedRecords', 'enableScriptExecute', 'enableSuiteScriptConsole', 'enableAdvancedEditor', 'enableShortcutsCheatsheet', 'enableFindFieldById', 'enableOpenInOtherEnv', 'openInOtherEnvSandboxes', 'enableAiAssistant', 'aiAssistantPage', 'enableGithubBackup', 'enablePagePerformance', 'enableRolePermissions', 'enableRecordHistory', 'enableCsvImportTemplate', 'enableRecordAttachments', 'enableSetFieldValues', 'enableToolsMenuModal', 'nsftToolsMenuModeChosen'];
+    const STORAGE_KEY = ['enableViewRecordObject', 'enableViewScriptedRecord', 'enableRecordLogsViewer', 'enableSuiteQLRunner', 'enableExportSearch', 'enableLoadRecordConsole', 'enableLoadNModule', 'enableGoToRecord', 'enableCommandPalette', 'enableCustomizationFinder', 'enableDeletedRecords', 'enableDeploymentReport', 'enableScriptExecute', 'enableSuiteScriptConsole', 'enableAdvancedEditor', 'enableShortcutsCheatsheet', 'enableFindFieldById', 'enableOpenInOtherEnv', 'openInOtherEnvSandboxes', 'enableAiAssistant', 'aiAssistantPage', 'enableGithubBackup', 'enablePagePerformance', 'enableRolePermissions', 'enableRecordHistory', 'enableCsvImportTemplate', 'enableRecordAttachments', 'enableSetFieldValues', 'enableToolsMenuModal', 'nsftToolsMenuModeChosen'];
 
     const TOOLS_MENU_ID = 'nsft-tools-menu';
     const VIEW_RECORD_ITEM_ID = 'link_VerObjectRecord';
@@ -16,6 +16,7 @@
     const COMMAND_PALETTE_ITEM_ID = 'link_CommandPalette';
     const CFIND_ITEM_ID = 'link_CustomizationFinder';
     const DELREC_ITEM_ID = 'link_DeletedRecords';
+    const DEPLREP_ITEM_ID = 'link_DeploymentReport';
     const SX_ITEM_ID = 'link_ScriptExecute';
     const SSC_ITEM_ID = 'link_SuiteScriptConsole';
     const FRAG_ITEM_ID = 'link_Fragmentos';
@@ -176,6 +177,10 @@
             menuItemsToAppend.push(createDeletedRecordsItem());
         }
 
+        if (!document.getElementById(DEPLREP_ITEM_ID) && items.enableDeploymentReport !== false) {
+            menuItemsToAppend.push(createDeploymentReportItem());
+        }
+
         if (!document.getElementById(SX_ITEM_ID) && items.enableScriptExecute) {
             menuItemsToAppend.push(createScriptExecuteItem());
         }
@@ -276,6 +281,7 @@
         enableCommandPalette: [COMMAND_PALETTE_ITEM_ID],
         enableCustomizationFinder: [CFIND_ITEM_ID],
         enableDeletedRecords: [DELREC_ITEM_ID],
+        enableDeploymentReport: [DEPLREP_ITEM_ID],
         enableScriptExecute: [SX_ITEM_ID],
         enableSuiteScriptConsole: [SSC_ITEM_ID, FRAG_ITEM_ID],
         enableAdvancedEditor: [ADV_ITEM_ID],
@@ -1103,6 +1109,17 @@
         return li;
     }
 
+    function createDeploymentReportItem() {
+        const label = chrome.i18n.getMessage('dr_title') || 'Script deployments report';
+        const li = document.createElement('li');
+        li.id = DEPLREP_ITEM_ID;
+        li.className = 'ns-menuitem';
+        li.setAttribute('data-nsps-type', 'menu_item');
+        li.setAttribute('data-nsps-label', label);
+        li.innerHTML = buildMenuLinkHtml(label, 'deploy_report', 'nsft-show-deployment-report');
+        return li;
+    }
+
     function createScriptExecuteItem() {
         const label = chrome.i18n.getMessage('enableScriptExecuteLabel') || 'Run Map/Reduce and Scheduled';
         const li = document.createElement('li');
@@ -1307,6 +1324,7 @@
         set('enableCommandPaletteLabel', 'command_palette');
         set('enableCustomizationFinderLabel', 'customization_finder');
         set('enableDeletedRecordsLabel', 'deleted_records', 'Registros Eliminados');
+        set('dr_title', 'deploy_report', 'Script deployments report');
         set('enableScriptExecuteLabel', 'script_execute', 'Ejecutar Map/Reduce y Scheduled');
         set('enableSuiteScriptConsoleLabel', 'suitescript_console');
         set('ssc_frag_menu_tools', 'fragments', 'Ejecutar snippets');

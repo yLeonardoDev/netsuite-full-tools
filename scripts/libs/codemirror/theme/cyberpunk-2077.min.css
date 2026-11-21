@@ -1,0 +1,101 @@
+/*!
+ * Cyberpunk 2077 para CodeMirror 5 — .cm-s-cyberpunk-2077
+ *
+ * Tema do NSFT inspirado na paleta neon do universo Cyberpunk 2077 e nos temas
+ * "Cyberpunk" do VS Code: amarelo #fcee0a, ciano #02d7f2, vermelho #ff003c,
+ * magenta #ff2a6d e verde #00ff9f sobre um fundo quase preto azulado.
+ * Paleta própria, sem copiar arquivos de terceiros.
+ *
+ * O brilho (text-shadow) vai só em palavras-chave e definições, com uma camada
+ * só: é o que dá a cara do tema, e mais camadas deixam a digitação pesada.
+ *
+ * O `.min` do nome é o que os módulos esperam (`.../theme/<nome>.min.css`).
+ */
+
+.cm-s-cyberpunk-2077.CodeMirror {
+    background-color: #0a0b14 !important;
+    background-image: none !important;
+    color: #e4e6f2 !important;
+    border: none;
+}
+
+.cm-s-cyberpunk-2077 .CodeMirror-gutters {
+    background-color: #0a0b14 !important;
+    border-right: 1px solid #1d1f33;
+    color: #3d4166;
+}
+
+.cm-s-cyberpunk-2077 .CodeMirror-linenumber { color: rgba(228, 230, 242, 0.35); }
+.cm-s-cyberpunk-2077 .CodeMirror-activeline-gutter .CodeMirror-linenumber { color: #fcee0a; }
+
+.cm-s-cyberpunk-2077 .CodeMirror-cursor { border-left: 2px solid #fcee0a; }
+.cm-s-cyberpunk-2077 .cm-fat-cursor .CodeMirror-cursor { background: rgba(252, 238, 10, 0.55); }
+
+.cm-s-cyberpunk-2077 .CodeMirror-selected { background: rgba(252, 238, 10, 0.18); }
+.cm-s-cyberpunk-2077 .CodeMirror-line::selection,
+.cm-s-cyberpunk-2077 .CodeMirror-line > span::selection,
+.cm-s-cyberpunk-2077 .CodeMirror-line > span > span::selection { background: rgba(252, 238, 10, 0.18); }
+.cm-s-cyberpunk-2077 .CodeMirror-line::-moz-selection,
+.cm-s-cyberpunk-2077 .CodeMirror-line > span::-moz-selection,
+.cm-s-cyberpunk-2077 .CodeMirror-line > span > span::-moz-selection { background: rgba(252, 238, 10, 0.18); }
+
+.cm-s-cyberpunk-2077 .CodeMirror-activeline-background { background: rgba(2, 215, 242, 0.07); }
+
+.cm-s-cyberpunk-2077 .CodeMirror-matchingbracket {
+    background: rgba(2, 215, 242, 0.18);
+    color: #02d7f2 !important;
+    text-decoration: none;
+    outline: 1px solid rgba(2, 215, 242, 0.5);
+}
+.cm-s-cyberpunk-2077 .CodeMirror-nonmatchingbracket { color: #ff003c !important; }
+
+.cm-s-cyberpunk-2077 .CodeMirror-guttermarker { color: #fcee0a; }
+.cm-s-cyberpunk-2077 .CodeMirror-guttermarker-subtle { color: #3d4166; }
+.cm-s-cyberpunk-2077 .CodeMirror-foldmarker { color: #02d7f2; text-shadow: none; }
+
+.cm-s-cyberpunk-2077 span.cm-comment { color: #6d7196; font-style: italic; }
+
+.cm-s-cyberpunk-2077 span.cm-string,
+.cm-s-cyberpunk-2077 span.cm-string-2 { color: #02d7f2; }
+
+.cm-s-cyberpunk-2077 span.cm-number,
+.cm-s-cyberpunk-2077 span.cm-atom { color: #ff2a6d; }
+
+.cm-s-cyberpunk-2077 span.cm-keyword {
+    color: #fcee0a;
+    text-shadow: 0 0 6px rgba(252, 238, 10, 0.35);
+}
+
+.cm-s-cyberpunk-2077 span.cm-operator,
+.cm-s-cyberpunk-2077 span.cm-attribute { color: #fcee0a; }
+
+.cm-s-cyberpunk-2077 span.cm-def {
+    color: #00ff9f;
+    text-shadow: 0 0 6px rgba(0, 255, 159, 0.3);
+}
+
+.cm-s-cyberpunk-2077 span.cm-builtin { color: #00ff9f; }
+
+/* Chaves de objeto ({ id: …, type: … }) com o mesmo tom das propriedades:
+   a extensão marca essas chaves como cm-objectkey e, sem esta regra, ficam
+   da cor do texto. */
+.cm-s-cyberpunk-2077 span.cm-property,
+.cm-s-cyberpunk-2077 span.cm-objectkey { color: #d77dff; }
+
+.cm-s-cyberpunk-2077 span.cm-variable { color: #e4e6f2; }
+.cm-s-cyberpunk-2077 span.cm-variable-2 { color: #8ff0ff; }
+
+.cm-s-cyberpunk-2077 span.cm-type,
+.cm-s-cyberpunk-2077 span.cm-variable-3 { color: #ff003c; }
+
+.cm-s-cyberpunk-2077 span.cm-bracket { color: #8a8fb8; }
+.cm-s-cyberpunk-2077 span.cm-tag { color: #ff2a6d; }
+.cm-s-cyberpunk-2077 span.cm-qualifier,
+.cm-s-cyberpunk-2077 span.cm-meta { color: #ff2a6d; }
+.cm-s-cyberpunk-2077 span.cm-header { color: #fcee0a; font-weight: bold; }
+.cm-s-cyberpunk-2077 span.cm-link { color: #02d7f2; text-decoration: underline; }
+.cm-s-cyberpunk-2077 span.cm-error { color: #ffffff; background: #ff003c; }
+
+/* Busca e destaques dos addons */
+.cm-s-cyberpunk-2077 .cm-searching { background: rgba(252, 238, 10, 0.25); color: inherit; }
+.cm-s-cyberpunk-2077 .CodeMirror-search-match { background: rgba(252, 238, 10, 0.25); }

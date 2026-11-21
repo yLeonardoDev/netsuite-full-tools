@@ -1,0 +1,25 @@
+/*!
+ * Dracula para highlight.js — paleta oficial de draculatheme.com (MIT).
+ * Fundo #282a36, texto #f8f8f2, comentário #6272a4, ciano #8be9fd,
+ * verde #50fa7b, laranja #ffb86c, rosa #ff79c6, roxo #bd93f9,
+ * vermelho #ff5555, amarelo #f1fa8c.
+ */
+pre code.hljs{display:block;overflow-x:auto;padding:1em}
+code.hljs{padding:3px 5px}
+.hljs{color:#f8f8f2;background:#282a36}
+.hljs ::selection,.hljs::selection{background-color:#44475a;color:#f8f8f2}
+.hljs-comment,.hljs-quote{color:#6272a4;font-style:italic}
+.hljs-keyword,.hljs-selector-tag,.hljs-literal,.hljs-section,.hljs-link,.hljs-meta .hljs-keyword{color:#ff79c6}
+.hljs-string,.hljs-meta .hljs-string,.hljs-regexp,.hljs-addition{color:#f1fa8c}
+.hljs-number,.hljs-symbol,.hljs-bullet{color:#bd93f9}
+.hljs-built_in,.hljs-type,.hljs-class .hljs-title,.hljs-title.class_{color:#8be9fd;font-style:italic}
+.hljs-title,.hljs-title.function_,.hljs-name{color:#50fa7b}
+.hljs-attr,.hljs-attribute,.hljs-variable,.hljs-template-variable,.hljs-property{color:#8be9fd}
+.hljs-params{color:#ffb86c;font-style:italic}
+.hljs-tag,.hljs-punctuation,.hljs-operator{color:#f8f8f2}
+.hljs-selector-id,.hljs-selector-class,.hljs-selector-attr,.hljs-selector-pseudo{color:#50fa7b}
+.hljs-meta,.hljs-doctag{color:#ff79c6}
+.hljs-subst,.hljs-template-tag{color:#ffb86c}
+.hljs-deletion{color:#ff5555}
+.hljs-emphasis{font-style:italic}
+.hljs-strong{font-weight:700}

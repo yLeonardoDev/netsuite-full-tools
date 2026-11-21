@@ -1,0 +1,78 @@
+/* NSFT · Scripts implementados no File Cabinet */
+tr.nsft-fcds-hidden { display: none !important; }
+
+.nsft-fcds-pill.is-on:not(#nsft-a):not(#nsft-b) {
+    background: color-mix(in srgb, #16a34a 9%, #ffffff);
+    border-color: color-mix(in srgb, #16a34a 40%, #ffffff);
+    color: #15803d;
+}
+.nsft-fcds-pill.is-off:not(#nsft-a):not(#nsft-b) {
+    background: color-mix(in srgb, #d97706 9%, #ffffff);
+    border-color: color-mix(in srgb, #d97706 40%, #ffffff);
+    color: #b45309;
+}
+.nsft-fcds-pill.is-nodep:not(#nsft-a):not(#nsft-b) {
+    background: #f4f4f5;
+    border-color: #d4d4d8;
+    color: #52525b;
+}
+
+.nsft-fcds-bar {
+    display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+    margin: 6px 0 8px; padding: 6px 10px;
+    border: 1px solid color-mix(in srgb, var(--nsft-ns-accent, #2b4a8b) 25%, #ffffff);
+    background: color-mix(in srgb, var(--nsft-ns-accent, #2b4a8b) 5%, #ffffff);
+    border-radius: 8px;
+    font: 12px/1.3 -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: #27272a;
+}
+.nsft-fcds-bar > svg { width: 14px; height: 14px; color: var(--nsft-ns-accent, #2b4a8b); flex-shrink: 0; }
+.nsft-fcds-bar-text { flex: 1 1 auto; }
+.nsft-fcds-bar-toggle { display: inline-flex; align-items: center; gap: 6px; cursor: pointer; font-weight: 600; user-select: none; }
+.nsft-fcds-bar-toggle input { margin: 0; cursor: pointer; }
+
+.nsft-fcds-pop {
+    position: absolute; z-index: 2147483000;
+    width: 380px; max-width: calc(100vw - 16px); max-height: 60vh; overflow: auto;
+    background: #ffffff; color: #18181b;
+    border: 1px solid #e4e4e7; border-radius: 10px;
+    box-shadow: 0 12px 32px rgba(0,0,0,.18), 0 2px 6px rgba(0,0,0,.08);
+    font: 12px/1.4 -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+.nsft-fcds-pop-head {
+    position: sticky; top: 0; display: flex; align-items: baseline; gap: 8px;
+    padding: 10px 12px; background: #fafafa; border-bottom: 1px solid #e4e4e7;
+}
+.nsft-fcds-pop-file { color: #71717a; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; flex: 1; }
+.nsft-fcds-pop-x { border: 0; background: none; font-size: 18px; line-height: 1; cursor: pointer; color: #71717a; padding: 0 2px; }
+.nsft-fcds-pop-x:hover { color: #18181b; }
+.nsft-fcds-script { padding: 10px 12px; border-bottom: 1px solid #f4f4f5; }
+.nsft-fcds-script:last-child { border-bottom: 0; }
+.nsft-fcds-script-top { display: flex; align-items: center; gap: 8px; }
+.nsft-fcds-script-name { font-weight: 700; color: var(--nsft-ns-accent, #2b4a8b) !important; text-decoration: none; }
+.nsft-fcds-script-name:hover { text-decoration: underline; }
+.nsft-fcds-tag { font-size: 10px; padding: 1px 6px; border-radius: 999px; background: #eef2ff; color: #3730a3; white-space: nowrap; }
+.nsft-fcds-code { color: #71717a; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 11px; margin-top: 2px; }
+.nsft-fcds-empty { color: #a1a1aa; font-style: italic; margin-top: 6px; }
+.nsft-fcds-deps { list-style: none; margin: 8px 0 0; padding: 0; }
+.nsft-fcds-dep { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; padding: 3px 0; }
+.nsft-fcds-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; background: #a1a1aa; }
+.nsft-fcds-dep.is-on .nsft-fcds-dot { background: #16a34a; }
+.nsft-fcds-dep.is-off .nsft-fcds-dot { background: #d97706; }
+.nsft-fcds-dep-link { color: #18181b !important; font-weight: 600; text-decoration: none; }
+.nsft-fcds-dep-link:hover { text-decoration: underline; color: var(--nsft-ns-accent, #2b4a8b) !important; }
+.nsft-fcds-meta { color: #71717a; font-size: 11px; }
+.nsft-fcds-actions { margin-top: 8px; display: flex; gap: 6px; }
+.nsft-fcds-btn {
+    display: inline-block; padding: 3px 10px; border-radius: 6px;
+    border: 1px solid #d4d4d8; color: #27272a !important; text-decoration: none; font-weight: 600; font-size: 11px;
+}
+.nsft-fcds-btn:hover { background: #f4f4f5; }
+
+/* Botão "Ver script" */
+.nsft-fcds-view:not(#nsft-a):not(#nsft-b) {
+    background: color-mix(in srgb, var(--nsft-ns-accent, #2b4a8b) 12%, #ffffff);
+    border-color: var(--nsft-ns-accent, #2b4a8b);
+    font-weight: 600;
+}
+.nsft-fcds-bar.is-error { border-color: #fca5a5; background: #fef2f2; color: #991b1b; }

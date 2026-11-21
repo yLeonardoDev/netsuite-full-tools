@@ -1,0 +1,28 @@
+/*!
+ * Cyberpunk 2077 para highlight.js — tema do NSFT inspirado na paleta neon
+ * do universo Cyberpunk 2077 (amarelo #fcee0a, ciano #02d7f2, vermelho #ff003c)
+ * e nos temas "Cyberpunk" do VS Code. Paleta própria, sem copiar arquivos.
+ *
+ * Fundo quase preto azulado para o neon ter contraste; o brilho (text-shadow)
+ * é discreto e só nas palavras-chave e títulos, para não pesar na leitura.
+ */
+pre code.hljs{display:block;overflow-x:auto;padding:1em}
+code.hljs{padding:3px 5px}
+.hljs{color:#e4e6f2;background:#0a0b14}
+.hljs ::selection,.hljs::selection{background-color:rgba(252,238,10,.22);color:#ffffff}
+.hljs-comment,.hljs-quote{color:#6d7196;font-style:italic}
+.hljs-keyword,.hljs-selector-tag,.hljs-literal,.hljs-section,.hljs-meta .hljs-keyword{color:#fcee0a;text-shadow:0 0 6px rgba(252,238,10,.35)}
+.hljs-string,.hljs-meta .hljs-string,.hljs-regexp,.hljs-addition{color:#02d7f2}
+.hljs-number,.hljs-symbol,.hljs-bullet{color:#ff2a6d}
+.hljs-built_in,.hljs-type,.hljs-class .hljs-title,.hljs-title.class_{color:#ff003c}
+.hljs-title,.hljs-title.function_,.hljs-name{color:#00ff9f;text-shadow:0 0 6px rgba(0,255,159,.3)}
+.hljs-attr,.hljs-attribute,.hljs-property{color:#d77dff}
+.hljs-variable,.hljs-template-variable,.hljs-params{color:#e4e6f2}
+.hljs-tag,.hljs-punctuation,.hljs-operator{color:#8a8fb8}
+.hljs-selector-id,.hljs-selector-class,.hljs-selector-attr,.hljs-selector-pseudo{color:#00ff9f}
+.hljs-meta,.hljs-doctag{color:#ff2a6d}
+.hljs-subst,.hljs-template-tag{color:#fcee0a}
+.hljs-link{color:#02d7f2;text-decoration:underline}
+.hljs-deletion{color:#ff003c}
+.hljs-emphasis{font-style:italic}
+.hljs-strong{font-weight:700}

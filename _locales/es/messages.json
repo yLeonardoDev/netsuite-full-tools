@@ -18177,5 +18177,227 @@
   },
   "cl_8_0_0_rrblanco_desc": {
     "message": "Se arregló que Registros recientes se viera amarillento; ahora es blanco como los demás menús de NetSuite."
+  },
+  "langSelectTitle": {
+    "message": "Idioma de la extensión"
+  },
+  "langAuto": {
+    "message": "Automático (navegador)"
+  },
+  "enableFileCabinetDeployedScriptsLabel": {
+    "message": "Scripts implementados en el File Cabinet"
+  },
+  "enableFileCabinetDeployedScriptsDesc": {
+    "message": "En carpetas como SuiteScripts, marca cada archivo que usa un registro de Script y lista sus implementaciones. Haz clic en la etiqueta para ir al script o directo a una implementación, y filtra la página para ver sólo los scripts implementados."
+  },
+  "fcds_pill_deployed": {
+    "message": "Implementado · $1"
+  },
+  "fcds_pill_disabled": {
+    "message": "Implementaciones apagadas · $1"
+  },
+  "fcds_pill_no_deploy": {
+    "message": "Script · sin implementación"
+  },
+  "fcds_pill_tooltip": {
+    "message": "Haz clic para ver el script y sus implementaciones"
+  },
+  "fcds_pop_title": {
+    "message": "Scripts que usan este archivo"
+  },
+  "fcds_close": {
+    "message": "Cerrar"
+  },
+  "fcds_no_deployments": {
+    "message": "Este script no tiene implementaciones."
+  },
+  "fcds_dep_on": {
+    "message": "Implementado"
+  },
+  "fcds_dep_off": {
+    "message": "No implementado"
+  },
+  "fcds_open_script": {
+    "message": "Abrir script"
+  },
+  "fcds_filter_only": {
+    "message": "Ver sólo scripts con implementación"
+  },
+  "fcds_loading": {
+    "message": "Consultando implementaciones…"
+  },
+  "fcds_error": {
+    "message": "No se pudieron consultar las implementaciones: $1"
+  },
+  "fcds_bar_count": {
+    "message": "$1 con implementación · $2 con registro de Script · $3 archivos de script en esta página"
+  },
+  "fcds_status_released": {
+    "message": "Liberado"
+  },
+  "fcds_status_testing": {
+    "message": "En pruebas"
+  },
+  "fcds_status_notscheduled": {
+    "message": "Sin programar"
+  },
+  "fcds_status_scheduled": {
+    "message": "Programado"
+  },
+  "fcds_view_script": {
+    "message": "Ver script"
+  },
+  "fcds_view_script_tip": {
+    "message": "Abrir el registro del script: $1"
+  },
+  "fcds_choose_script": {
+    "message": "$1 scripts usan este archivo: elige uno"
+  },
+  "enableDeploymentReportLabel": {
+    "message": "Informe de implementaciones de script"
+  },
+  "enableDeploymentReportDesc": {
+    "message": "Una ventana con todas las implementaciones de script de la cuenta, con quién la creó y quién la modificó por última vez (notas del sistema), un filtro de usuario que sugiere nombres mientras escribes, filtros de tipo, estado y texto, enlaces directos y exportación a CSV."
+  },
+  "dr_title": {
+    "message": "Informe de implementaciones"
+  },
+  "dr_launch_tip": {
+    "message": "Filtra todas las implementaciones por usuario, tipo y estado"
+  },
+  "dr_loading": {
+    "message": "Cargando implementaciones…"
+  },
+  "dr_loading_n": {
+    "message": "Cargando implementaciones… $1"
+  },
+  "dr_error": {
+    "message": "No se pudieron cargar las implementaciones: $1"
+  },
+  "dr_reload": {
+    "message": "Recargar"
+  },
+  "dr_export_csv": {
+    "message": "Exportar CSV"
+  },
+  "dr_f_search": {
+    "message": "Buscar"
+  },
+  "dr_f_search_ph": {
+    "message": "Implementación, script, ID, archivo…"
+  },
+  "dr_f_owner": {
+    "message": "Propietario (quien creó el script)"
+  },
+  "dr_all": {
+    "message": "- Todos -"
+  },
+  "dr_clear": {
+    "message": "Limpiar filtros"
+  },
+  "dr_top_owners": {
+    "message": "Propietarios:"
+  },
+  "dr_col_id": {
+    "message": "ID interno"
+  },
+  "dr_col_deployment": {
+    "message": "Implementación"
+  },
+  "dr_col_script": {
+    "message": "Script"
+  },
+  "dr_col_type": {
+    "message": "Tipo"
+  },
+  "dr_col_owner": {
+    "message": "Propietario del script"
+  },
+  "dr_col_status": {
+    "message": "Estado"
+  },
+  "dr_col_deployed": {
+    "message": "Implementado"
+  },
+  "dr_col_record": {
+    "message": "Aplicado a"
+  },
+  "dr_col_file": {
+    "message": "Archivo"
+  },
+  "dr_yes": {
+    "message": "Sí"
+  },
+  "dr_no": {
+    "message": "No"
+  },
+  "dr_no_owner": {
+    "message": "(sin propietario)"
+  },
+  "dr_none": {
+    "message": "Ninguna implementación coincide con los filtros."
+  },
+  "dr_count": {
+    "message": "$1 de $2 implementaciones"
+  },
+  "dr_more": {
+    "message": "Mostrando las primeras $1: acota los filtros o exporta a CSV para verlas todas."
+  },
+  "dr_hint": {
+    "message": "Propietario = el empleado indicado como Propietario en el registro del script (por defecto, quien lo creó)."
+  },
+  "dr_f_user": {
+    "message": "Usuario"
+  },
+  "dr_f_user_ph": {
+    "message": "Escribe un nombre, p. ej. leo"
+  },
+  "dr_f_scope": {
+    "message": "Buscar en"
+  },
+  "dr_scope_any": {
+    "message": "Cualquiera que la modificó"
+  },
+  "dr_col_created": {
+    "message": "Creado por"
+  },
+  "dr_col_modified": {
+    "message": "Última modificación por"
+  },
+  "dr_user_none": {
+    "message": "Nadie con ese nombre"
+  },
+  "dr_top_creators": {
+    "message": "Quién más creó:"
+  },
+  "dr_loading_notes": {
+    "message": "$1 implementaciones · leyendo las notas del sistema…"
+  },
+  "dr_notes_unavailable": {
+    "message": "No se pudieron leer las notas del sistema en esta página, así que \"Creado por\" usa el propietario del script. Abre el informe desde la página Implementaciones de script."
+  },
+  "dr_notes_partial": {
+    "message": "$1 implementaciones no tienen notas del sistema (habitual en bundles, instalaciones SDF o un sandbox actualizado): en esas, \"Creado por\" usa las notas o el propietario del script, o queda vacío."
+  },
+  "dr_from_dep": {
+    "message": "De las notas del sistema de la implementación"
+  },
+  "dr_from_script": {
+    "message": "De las notas del sistema del script (la implementación no tiene)"
+  },
+  "dr_from_owner": {
+    "message": "Propietario del script (sin notas del sistema)"
+  },
+  "dr_tag_owner": {
+    "message": "propietario"
+  },
+  "dr_hint2": {
+    "message": "Creado por = quien tocó primero la implementación, según sus notas del sistema. Pasa el ratón por el nombre para ver de dónde sale."
+  },
+  "dr_user_counts": {
+    "message": "creó $1 · modificó $2"
+  },
+  "dr_incomplete": {
+    "message": "Solo se cargaron $1 de las $2 implementaciones que cuenta NetSuite. Pulsa Recargar; si sigue, avísanos."
   }
 }

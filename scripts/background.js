@@ -1,5 +1,6 @@
 
 try {
+    importScripts('modules/_shared/nsft_i18n.js');
     importScripts('modules/_shared/nsft_defaults.js');
     importScripts('modules/_shared/nsft_grouped_tabs_colors.js');
     importScripts('modules/_shared/nsft_env.js');

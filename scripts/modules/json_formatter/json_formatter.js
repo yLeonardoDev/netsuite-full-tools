@@ -117,6 +117,7 @@
             'nsft-jf-theme-dark',
             'nsft-jf-theme-monokai',
             'nsft-jf-theme-dracula',
+            'nsft-jf-theme-cyberpunk-2077',
             'nsft-jf-theme-solarized-light',
             'nsft-jf-theme-solarized-dark',
             'nsft-jf-theme-nord',

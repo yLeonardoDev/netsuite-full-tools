@@ -7559,7 +7559,7 @@
         ['atom-one-light', 'Atom One Light'], ['atom-one-dark', 'Atom One Dark'],
         ['material-darker', 'Material Darker'], ['dracula', 'Dracula'], ['monokai', 'Monokai'],
         ['nord', 'Nord'], ['darcula', 'Darcula'], ['cobalt', 'Cobalt'], ['night', 'Night'],
-        ['synthwave-84', "Synthwave '84"], ['eclipse', 'Eclipse'], ['idea', 'IDEA'], ['neo', 'Neo'],
+        ['synthwave-84', "Synthwave '84"], ['cyberpunk-2077', 'Cyberpunk 2077'], ['eclipse', 'Eclipse'], ['idea', 'IDEA'], ['neo', 'Neo'],
         ['solarized dark', 'Solarized Dark'], ['solarized light', 'Solarized Light']
     ];
     const RUNNER_SET_DEFAULTS = {

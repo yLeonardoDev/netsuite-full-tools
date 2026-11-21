@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+    <script src="../scripts/modules/_shared/nsft_i18n.js"></script>
   <title>NetSuite Full Tools Config</title>
   <style>
     :root { color-scheme: light dark; }
@@ -123,6 +124,21 @@
             </svg>
             <span class="nsft-meeting-dot" aria-hidden="true"></span>
           </button>
+          <label class="nsft-topbar-btn nsft-lang-btn" data-i18n-title="langSelectTitle" title="Idioma da extensão">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="10"></circle>
+              <path d="M2 12h20"></path>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+            </svg>
+            <span class="nsft-lang-code" id="nsftLangCode" aria-hidden="true"></span>
+            <select id="nsftLangSelect" class="nsft-lang-native" data-i18n-title="langSelectTitle" aria-label="Idioma">
+              <option value="auto" data-i18n="langAuto">Automático (navegador)</option>
+              <option value="pt_BR">Português (Brasil)</option>
+              <option value="en">English</option>
+              <option value="es">Español</option>
+            </select>
+          </label>
           <button type="button" id="nsftThemeToggle" class="nsft-topbar-btn nsft-theme-toggle" data-mode="light"
             title="Cambiar a modo oscuro">
             <svg class="nsft-icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
@@ -688,6 +704,8 @@
                   <option value="obsidian">Obsidian</option>
                   <option value="shades-of-purple">Shades of Purple</option>
                   <option value="synthwave-84">Synthwave &#39;84</option>
+                  <option value="dracula">Dracula</option>
+                  <option value="cyberpunk-2077">Cyberpunk 2077</option>
                   <option value="vs">Visual Studio</option>
                   <option value="vs2015">VS2015</option>
                   <option value="stackoverflow-light">StackOverflow Light</option>
@@ -1121,6 +1139,7 @@
                   <option value="cobalt">Cobalt</option>
                   <option value="night">Night</option>
                   <option value="synthwave-84">Synthwave &#39;84</option>
+                  <option value="cyberpunk-2077">Cyberpunk 2077</option>
                   <option value="eclipse">Eclipse</option>
                   <option value="idea">IDEA</option>
                   <option value="neo">Neo</option>
@@ -1177,6 +1196,7 @@
                   <option value="cobalt">Cobalt</option>
                   <option value="night">Night</option>
                   <option value="synthwave-84">Synthwave &#39;84</option>
+                  <option value="cyberpunk-2077">Cyberpunk 2077</option>
                   <option value="eclipse">Eclipse</option>
                   <option value="idea">IDEA</option>
                   <option value="neo">Neo</option>
@@ -1255,6 +1275,8 @@
                   <option value="obsidian">Obsidian</option>
                   <option value="shades-of-purple">Shades of Purple</option>
                   <option value="synthwave-84">Synthwave &#39;84</option>
+                  <option value="dracula">Dracula</option>
+                  <option value="cyberpunk-2077">Cyberpunk 2077</option>
                   <option value="vs">Visual Studio</option>
                   <option value="vs2015">VS2015</option>
                   <option value="stackoverflow-light">StackOverflow Light</option>
@@ -1375,6 +1397,7 @@
                   <option value="github">GitHub</option>
                   <option value="monokai">Monokai</option>
                   <option value="dracula">Dracula</option>
+                  <option value="cyberpunk-2077">Cyberpunk 2077</option>
                   <option value="solarized-light">Solarized Light</option>
                   <option value="solarized-dark">Solarized Dark</option>
                   <option value="nord">Nord</option>
@@ -1465,6 +1488,7 @@
                   <option value="cobalt">Cobalt</option>
                   <option value="night">Night</option>
                   <option value="synthwave-84">Synthwave &#39;84</option>
+                  <option value="cyberpunk-2077">Cyberpunk 2077</option>
                   <option value="eclipse">Eclipse</option>
                   <option value="idea">IDEA</option>
                   <option value="neo">Neo</option>
@@ -1550,6 +1574,8 @@
                   <option value="obsidian">Obsidian</option>
                   <option value="shades-of-purple">Shades of Purple</option>
                   <option value="synthwave-84">Synthwave &#39;84</option>
+                  <option value="dracula">Dracula</option>
+                  <option value="cyberpunk-2077">Cyberpunk 2077</option>
                   <option value="vs">Visual Studio</option>
                   <option value="vs2015">VS2015</option>
                   <option value="stackoverflow-light">StackOverflow Light</option>
@@ -2098,6 +2124,17 @@
             </label>
           </div>
 
+          <div class="option-row">
+            <div>
+              <span id="label_enableDeploymentReport" data-i18n="enableDeploymentReportLabel"></span>
+              <div id="desc_enableDeploymentReport" class="description" data-i18n="enableDeploymentReportDesc"></div>
+            </div>
+            <label class="switch">
+              <input type="checkbox" id="enableDeploymentReport">
+              <span class="slider round"></span>
+            </label>
+          </div>
+
           <div class="option-row" style="flex-wrap: wrap;">
             <div style="flex: 1; min-width: 200px;">
               <span id="label_enableAutogenerateIds" data-i18n="enableAutogenerateIdsLabel"></span>
@@ -2303,6 +2340,8 @@
                   <option value="obsidian">Obsidian</option>
                   <option value="shades-of-purple">Shades of Purple</option>
                   <option value="synthwave-84">Synthwave &#39;84</option>
+                  <option value="dracula">Dracula</option>
+                  <option value="cyberpunk-2077">Cyberpunk 2077</option>
                   <option value="vs">Visual Studio</option>
                   <option value="vs2015">VS2015</option>
                   <option value="stackoverflow-light">StackOverflow Light</option>
@@ -2417,6 +2456,17 @@
 
           <div class="option-row">
             <div>
+              <span id="label_enableFileCabinetDeployedScripts" data-i18n="enableFileCabinetDeployedScriptsLabel"></span>
+              <div id="desc_enableFileCabinetDeployedScripts" class="description" data-i18n="enableFileCabinetDeployedScriptsDesc"></div>
+            </div>
+            <label class="switch">
+              <input type="checkbox" id="enableFileCabinetDeployedScripts">
+              <span class="slider round"></span>
+            </label>
+          </div>
+
+          <div class="option-row">
+            <div>
               <span id="label_enableFileCabinetRenameBeta" data-i18n="enableFileCabinetRenameBetaLabel"></span>
               <div id="desc_enableFileCabinetRenameBeta" class="description" data-i18n="enableFileCabinetRenameBetaDesc"></div>
             </div>
@@ -2479,6 +2529,8 @@
                   <option value="obsidian">Obsidian</option>
                   <option value="shades-of-purple">Shades of Purple</option>
                   <option value="synthwave-84">Synthwave &#39;84</option>
+                  <option value="dracula">Dracula</option>
+                  <option value="cyberpunk-2077">Cyberpunk 2077</option>
                   <option value="vs">Visual Studio</option>
                   <option value="vs2015">VS2015</option>
                   <option value="stackoverflow-light">StackOverflow Light</option>

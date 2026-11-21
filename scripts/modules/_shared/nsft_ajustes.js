@@ -21,7 +21,7 @@
     const TEMAS_HLJS = [
         ['atom-one-dark', 'Atom One Dark'], ['atom-one-light', 'Atom One Light'], ['default', 'Default'],
         ['github', 'GitHub Light'], ['github-dark', 'GitHub Dark'], ['monokai', 'Monokai'], ['obsidian', 'Obsidian'],
-        ['shades-of-purple', 'Shades of Purple'], ['synthwave-84', "Synthwave '84"], ['vs', 'Visual Studio'],
+        ['shades-of-purple', 'Shades of Purple'], ['synthwave-84', "Synthwave '84"], ['dracula', 'Dracula'], ['cyberpunk-2077', 'Cyberpunk 2077'], ['vs', 'Visual Studio'],
         ['vs2015', 'VS2015'], ['stackoverflow-light', 'StackOverflow Light'], ['stackoverflow-dark', 'StackOverflow Dark']
     ];
 

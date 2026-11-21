@@ -3451,3 +3451,22 @@ function wireTabPreview(panel, caja, tituloEl, replayEl) {
     document.addEventListener('scroll', () => { ultimoScroll = Date.now(); cierra(); }, true);
     document.addEventListener('wheel', () => { ultimoScroll = Date.now(); }, { passive: true, capture: true });
 })();
+
+
+(function nsftLangSelector() {
+    const sel = document.getElementById('nsftLangSelect');
+    const code = document.getElementById('nsftLangCode');
+    const I = globalThis.NSFT_I18N;
+    if (!sel || !I) return;
+    const SHORT = { pt_BR: 'PT', en: 'EN', es: 'ES' };
+    const pinta = () => { if (code) code.textContent = SHORT[I.effective()] || ''; };
+    chrome.storage.local.get({ [I.STORAGE_KEY]: 'auto' }, (it) => {
+        sel.value = (it && it[I.STORAGE_KEY]) || 'auto';
+        pinta();
+    });
+    sel.addEventListener('change', async () => {
+        await I.set(sel.value);
+        // Recarrega o popup para que todos os textos saiam no novo idioma.
+        location.reload();
+    });
+})();
